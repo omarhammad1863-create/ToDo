@@ -1,0 +1,10 @@
+fastapienv/
+.env
+.pip-audit-cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.idea/
+.vscode/
+*.db
+*.db-journal
