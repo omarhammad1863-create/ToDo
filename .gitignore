@@ -1,10 +1,32 @@
+# Virtual environments
 fastapienv/
+.venv/
+venv/
+env/
+
+# Local configuration and secrets
 .env
-.pip-audit-cache/
+.env.*
+!.env.example
+
+# Python caches and tooling
 __pycache__/
 *.py[cod]
 .pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.pip-audit-cache/
+
+# IDE and operating-system files
 .idea/
 .vscode/
+.DS_Store
+Thumbs.db
+
+# Local databases
 *.db
 *.db-journal
+*.sqlite
+*.sqlite3
