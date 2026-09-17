@@ -22,6 +22,11 @@ def test():
     return RedirectResponse(url="/todos/todo-page", status_code=status.HTTP_302_FOUND)
 
 
+@app.get("/favicon.ico", include_in_schema=False)
+def favicon():
+    return RedirectResponse(url="/static/favicon.svg")
+
+
 @app.get("/healthy")
 def health_check():
     return {"status": "Healthy"}
